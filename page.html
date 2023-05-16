@@ -28,20 +28,20 @@
     </head>
     <body> 
         <h1 style="color: #ffffff;"> A senha da caixa é nosso aniversário de namoro?</h1>
-        <button id="sim">09/03</button>
-        <button id="nao">09/02</button>
+        <button id="data1">09/03</button>
+        <button id="data2">09/02</button>
         <script>
-            var nao = document.getElementById("nao");
-            nao.addEventListener("click",
+            var data1 = document.getElementById("data1");
+            data1.addEventListener("click",
             function(){
             var randomX= Math.floor(Math.random()*window.innerWidth);
             var randomY= Math.floor(Math.random()*window.innerHeight);
-            nao.style.position = "absolute";
-            nao.style.top = randomY + "px";
-            nao.style.left = randomX +"px";
+            data1.style.position = "absolute";
+            data1.style.top = randomY + "px";
+            data1.style.left = randomX +"px";
             });
-            var sim = document.getElementById("sim");
-            sim.addEventListener("click",function(){
+            var data2 = document.getElementById("data2");
+            data2.addEventListener("click",function(){
             window.location.href ="https://youtu.be/SC4xMk98Pdc?t=36";
             });
         </script>
