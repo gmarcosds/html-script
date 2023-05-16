@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quem ama mais?</title>
+        <style>
+            body{
+                background-color:  #b700ff;
+                text-align: center;
+                padding-top: 50px;
+            }
+            button {
+                padding-top: 50px;
+                background-color: #ffffff;
+                color: #000000;
+                font-size: 24px;
+                font-weight: bold;
+                padding: 20px 40px;
+                border : none;
+                border-radius: 50px;
+                cursor: pointer;
+                margin: 20px;
+            }
+            button:hover {
+                background-color: #ff9999;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body> 
+        <h1 style="color: #ffffff;"> Quem ama mais?</h1>
+        <button id="sim">Gabriel</button>
+        <button id="nao">Maria</button>
+        <script>
+            var nao = document.getElementById("nao");
+            nao.addEventListener("click",
+            function(){
+            var randomX= Math.floor(Math.random()*window.innerWidth);
+            var randomY= Math.floor(Math.random()*window.innerHeight);
+            nao.style.position = "absolute";
+            nao.style.top = randomY + "px";
+            nao.style.left = randomX +"px";
+            });
+            var sim = document.getElementById("sim");
+            sim.addEventListener("click",function(){
+            window.location.href ="https://youtu.be/SC4xMk98Pdc?t=36";
+            });
+        </script>
+    </body>
+</html>
