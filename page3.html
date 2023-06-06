@@ -36,7 +36,8 @@
                 <h2 style="color: #ffffff;" id="result"></h2>
             </div>
         </div>
-    
+        <img id="vida" src="vida.jpg" alt="Vida" style="display: none; width: 300px; height: 300px; margin: auto;">
+        <figcaption id="legenda" style="display: none; color: red; font-size: 50px;">Eu te amo!</figcaption>
         <footer class="footer">
             <p>&copy; 2023 Gabriel Marcos. Todos os direitos reservados.</p>
         </footer>
@@ -47,6 +48,10 @@
     
                 if (userInput === correctAnswer) {
                     document.getElementById("result").innerText = "Parabéns! Você acertou!";
+                    var imgElement = document.getElementById('vida');
+                    var legenda = document.getElementById('legenda');
+                    imgElement.style.display = 'block';
+                    legenda.style.display = 'block';
                     redirectToYouTube();
                 } else {
                     document.getElementById("result").innerText = "Ops! Tente novamente!";
