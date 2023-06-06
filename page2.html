@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quem ama mais?</title>
+        <style>
+            body{
+                background-color:  #b700ff;
+                text-align: center;
+                padding-top: 50px;
+            }
+            button {
+                padding-top: 50px;
+                background-color: #ffffff;
+                color: #000000;
+                font-size: 24px;
+                font-weight: bold;
+                padding: 20px 40px;
+                border : none;
+                border-radius: 50px;
+                cursor: pointer;
+                margin: 20px;
+            }
+            button:hover {
+                background-color: #ff9999;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body> 
+        <h1 style="color: #ffffff;"> Quem é o mais cagão?</h1>
+        <button id="data2">Maria</button>
+        <button id="data1">Gabriel</button>
+        <script>
+            var data1 = document.getElementById("data1");
+            data1.addEventListener("click",
+            function(){
+            var randomX= Math.floor(Math.random()*window.innerWidth);
+            var randomY= Math.floor(Math.random()*window.innerHeight);
+            data1.style.position = "absolute";
+            data1.style.top = randomY + "px";
+            data1.style.left = randomX +"px";
+            });
+            var data2 = document.getElementById("data2");
+            data2.addEventListener("click",function(){
+            window.location.href ="page3.html";
+            });
+        </script>
+    </body>
+</html>
